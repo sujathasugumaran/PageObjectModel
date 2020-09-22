@@ -26,6 +26,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=1)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
+		//Assert Title
 		Assert.assertEquals(title, "#1 Free CRM for Any Business: Online Customer Relationship Software");
 	}
 	
@@ -37,7 +38,9 @@ public class LoginPageTest extends TestBase{
 	
 	@Test(priority=3)
 	public void loginTest(){
+		//Login action
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		//ToDo: Need to add assertion
 	}
 	
 	
